@@ -4,11 +4,12 @@
 }
 .main {
  width: 100vw;
- height: 100vh;   
+ height: 100vh;  
+ overflow: hidden; 
 }
 
 .upper {
-    width: 100vw;
+    width: 100%;
     height: 50%;
     border-bottom: 1px dashed black;
     display: flex;
@@ -16,27 +17,49 @@
 }
 
 .slot {
-    width: 300px;
-    height: 300px;
+    width: 20%;
+    height: 70%;
     border: 1px solid black;
     margin-left: 50px;
     margin-top: 50px;
 }
 
-#spinBtn {    
-    position: absolute;
-    top: 150px;
-    right: 300px;
+.tool-container {
+    padding-top: 100px;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.score {
+    padding-bottom: 30px;
+    font-size: 2em;
+}
+
+#score-number {
+    font-size: 2em;
+    color: #ba3551;
+}
+
+#spinBtn {   
+    background: #ba3551; 
     width: 200px;
     height: 100px;
-    margin-left: 100px;
     border-radius: 10px;
     outline: none;
     border: none;
+    color: azure;
+    font-size: 1.2em;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+#spinBtn:hover {
+    box-shadow: 0 0 5px rgba(92, 2, 2, 0.5);
 }
 
 .lower {
-    width: 100vw;
+    width: 100%;
     height: 50%;
     display: flex;
     flex-direction: row;
@@ -54,15 +77,14 @@
 }
 
 .winner-icon {
-    margin-top: 20px;
-    margin-left: 50px;
+    padding-top: 5px;
+    margin-left: 20px;
     display: flex;
     flex-direction: row;
-    height: 50px;
 }
 
 .random-icons {
-    margin-top: 20px;
+    padding-top: 15px;
     margin-left: 50px;
     display: flex;
     flex-direction: row;
@@ -70,13 +92,7 @@
 }
 
 img {
-    width: 50px;
     height: 50px;
-}
-
-.icon {
-    height: 50px;
-    width: 50px;
 }
 
 span {
@@ -88,4 +104,35 @@ span {
 h1 {
     padding-top: 20px;
     padding-left: 25px;
+}
+
+.diamond {
+    background: url(./img/diamond.png) center no-repeat;
+}
+
+ .seven {
+     background: url(./img/seven.png) center no-repeat;
+ }
+
+.horseshoe {
+    background: url(./img/horseshoe.png) center no-repeat;
+}
+
+.bell {
+    background: url(./img/bell.png) center no-repeat;
+}
+
+.lemon {
+    background: url(./img/lemon.png) center no-repeat;
+}
+
+.cherry {
+    background: url(./img/cherry.png) center no-repeat;
+}
+
+#spinBtn.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.5;
+    background-color: grey;
 }
