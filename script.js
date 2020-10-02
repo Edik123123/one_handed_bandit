@@ -6,52 +6,40 @@ const spinCost = 20;
 
 window.onload = function () {
   renderScore();
-  Slot1.spin();
-  Slot2.spin();
-  Slot3.spin();
+  slot1.spin();
+  slot2.spin();
+  slot3.spin();
 };
 
 const slotValues = {
-  slot1 : 0,
-  slot2 : 0,
-  slot3 : 0
+  slot1: 0,
+  slot2: 0,
+  slot3: 0,
 };
-class Components {
+class Slot {
   constructor(selector) {
     this.$el = document.getElementById(selector);
-    
   }
   spin() {
-    this.$el.className = 'slot';
-    let number = Math.random() * 20;
-    number = Math.round(number);
-    while (number > icons.length - 1) {
-      number -= icons.length;
+    if (this.$el) {
+      this.$el.className = 'slot';
+      let number = Math.round(Math.random() * 20);
+      while (number > icons.length - 1) {
+        number -= icons.length;
+      }
+      this.$el.classList.add(icons[number]);
+      slotValues[this.$el.id] = number;
     }
-    this.$el.classList.add(icons[number]);
-    slotValues[this.$el.id] = number;
-  }
-}
-class Slot extends Components {
-  constructor(options) {
-    super(options.selector);
   }
 }
 
+const slot1 = new Slot('slot1');
 
-const Slot1 = new Slot({
-  selector: 'slot1',
-});
+slot1.spin();
 
-Slot1.spin();
+const slot2 = new Slot('slot2');
 
-const Slot2 = new Slot({
-  selector: 'slot2',
-});
-
-const Slot3 = new Slot({
-  selector: 'slot3',
-});
+const slot3 = new Slot('slot3');
 
 function renderScore() {
   scoreTab.innerHTML = score;
@@ -60,9 +48,7 @@ function renderScore() {
 function gameOver() {
   score = 0;
   btn.classList.add('disabled');
-  alert(
-    'Прости дружок,у тебя кончились кредиты!'
-  );
+  alert('Прости дружок,у тебя кончились кредиты!');
   window.onclick = function () {
     location.reload();
   };
@@ -110,13 +96,13 @@ function scoreCalc() {
 
 btn.onclick = function () {
   setTimeout(() => {
-    Slot1.spin();
+    slot1.spin();
   }, 300);
   setTimeout(() => {
-    Slot2.spin();
+    slot2.spin();
   }, 500);
   setTimeout(() => {
-    Slot3.spin();
+    slot3.spin();
     scoreCalc();
   }, 700);
 };
