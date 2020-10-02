@@ -1,135 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="main">
-        <div class="upper">
-            <div class="slot" id="slot1"></div>
-            <div class="slot" id="slot2"></div>
-            <div class="slot" id="slot3"></div>
-            <div id="score">
-                <span></span>
-            </div>
-            <div class="tool-container">
-                <div class="score">
-                    <span>SCORE:</span>
-                    <span id="score-number"></span>
-                </div>
-            <button id="spinBtn">Spin</button>
-            </div>  
+      <div class="upper">
+        <div class="slot" id="slot1"></div>
+        <div class="slot" id="slot2"></div>
+        <div class="slot" id="slot3"></div>
+        <div id="score">
+          <span></span>
         </div>
-        <div class="lower">
-            <div class="win-points">
-                <div class="winner-icon">
-                    <div class="icon">
-                        <img src="./img/diamond.png" />
-                    </div>
-                    <div class="icon">
-                        <img src="./img/diamond.png" />
-                    </div>
-                    <div class="icon">
-                        <img src="./img/diamond.png" />
-                    </div>
-                    <span>1000pts</span>
-                </div>
-                <div class="winner-icon">
-                    <div class="icon">
-                        <img src="./img/horseshoe.png" />
-                    </div>
-                    <div class="icon">
-                        <img src="./img/horseshoe.png" />
-                    </div>
-                    <div class="icon">
-                        <img src="./img/horseshoe.png" />
-                    </div>
-                    <span>800pts</span>
-                </div>
-                <div class="winner-icon">
-                    <div class="icon">
-                        <img src="./img/seven.png" />
-                    </div>
-                    <div class="icon">
-                        <img src="./img/seven.png" />
-                    </div>
-                    <div class="icon">
-                        <img src="./img/seven.png" />
-                    </div>
-                    <span>777pts</span>
-                </div>
-                <div class="winner-icon">
-                    <div class="icon">
-                        <img src="./img/bell.png" />
-                    </div>
-                    <div class="icon">
-                        <img src="./img/bell.png" />
-                    </div>
-                    <div class="icon">
-                        <img src="./img/bell.png" />
-                    </div>
-                    <span>500pts</span>
-                </div>
-                <div class="winner-icon">
-                    <div class="icon">
-                        <img src="./img/cherry.png" />
-                    </div>
-                    <div class="icon">
-                        <img src="./img/cherry.png" />
-                    </div>
-                    <div class="icon">
-                        <img src="./img/cherry.png" />
-                    </div>
-                    <span>150pts</span>
-                </div>
-                <div class="winner-icon">
-                    <div class="icon">
-                        <img src="./img/lemon.png" />
-                    </div>
-                    <div class="icon">
-                        <img src="./img/lemon.png" />
-                    </div>
-                    <div class="icon">
-                        <img src="./img/lemon.png" />
-                    </div>
-                    <span>50pts</span>
-                </div>
-            </div>
-            <div class="random-points">
-                <h1>В Любом Порядке</h1>
-                <div class="random-icons">
-                    <div class="icon">
-                        <img src="./img/diamond.png" />
-                    </div>
-                    <div class="icon">
-                        <img src="./img/horseshoe.png" />
-                    </div>
-                    <div class="icon">
-                        <img src="./img/bell.png" />
-                    </div>
-                    <span>450pts</span>
-                </div>
-                <div class="random-icons">
-                    <div class="icon">
-                        <img src="./img/seven.png" />
-                    </div>
-                    <div class="icon">
-                        <img src="./img/lemon.png" />
-                    </div>
-                    <div class="icon">
-                        <img src="./img/cherry.png" />
-                    </div>
-                    <span>100pts</span>
-                </div>
-            </div>
+        <div class="tool-container">
+          <div class="score">
+            <span>SCORE:</span>
+            <span id="score-number"></span>
+          </div>
+          <button id="spinBtn">Spin</button>
         </div>
+      </div>
+      <div class="lower">
+        <div class="win-points">
+          <div class="winner-icon">
+            <div class="icon">
+              <img src="./img/diamond.png" />
+            </div>
+            <div class="icon">
+              <img src="./img/diamond.png" />
+            </div>
+            <div class="icon">
+              <img src="./img/diamond.png" />
+            </div>
+            <span>1000pts</span>
+          </div>
+          <div class="winner-icon">
+            <div class="icon">
+              <img src="./img/horseshoe.png" />
+            </div>
+            <div class="icon">
+              <img src="./img/horseshoe.png" />
+            </div>
+            <div class="icon">
+              <img src="./img/horseshoe.png" />
+            </div>
+            <span>800pts</span>
+          </div>
+          <div class="winner-icon">
+            <div class="icon">
+              <img src="./img/seven.png" />
+            </div>
+            <div class="icon">
+              <img src="./img/seven.png" />
+            </div>
+            <div class="icon">
+              <img src="./img/seven.png" />
+            </div>
+            <span>777pts</span>
+          </div>
+          <div class="winner-icon">
+            <div class="icon">
+              <img src="./img/bell.png" />
+            </div>
+            <div class="icon">
+              <img src="./img/bell.png" />
+            </div>
+            <div class="icon">
+              <img src="./img/bell.png" />
+            </div>
+            <span>500pts</span>
+          </div>
+          <div class="winner-icon">
+            <div class="icon">
+              <img src="./img/cherry.png" />
+            </div>
+            <div class="icon">
+              <img src="./img/cherry.png" />
+            </div>
+            <div class="icon">
+              <img src="./img/cherry.png" />
+            </div>
+            <span>150pts</span>
+          </div>
+          <div class="winner-icon">
+            <div class="icon">
+              <img src="./img/lemon.png" />
+            </div>
+            <div class="icon">
+              <img src="./img/lemon.png" />
+            </div>
+            <div class="icon">
+              <img src="./img/lemon.png" />
+            </div>
+            <span>50pts</span>
+          </div>
+        </div>
+        <div class="random-points">
+          <h1>В Любом Порядке</h1>
+          <div class="random-icons">
+            <div class="icon">
+              <img src="./img/diamond.png" />
+            </div>
+            <div class="icon">
+              <img src="./img/horseshoe.png" />
+            </div>
+            <div class="icon">
+              <img src="./img/bell.png" />
+            </div>
+            <span>450pts</span>
+          </div>
+          <div class="random-icons">
+            <div class="icon">
+              <img src="./img/seven.png" />
+            </div>
+            <div class="icon">
+              <img src="./img/lemon.png" />
+            </div>
+            <div class="icon">
+              <img src="./img/cherry.png" />
+            </div>
+            <span>100pts</span>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>

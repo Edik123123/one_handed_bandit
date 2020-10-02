@@ -1,138 +1,137 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 .main {
- width: 100vw;
- height: 100vh;  
- overflow: hidden; 
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .upper {
-    width: 100%;
-    height: 50%;
-    border-bottom: 1px dashed black;
-    display: flex;
-    flex-direction: row;
+  width: 100%;
+  height: 50%;
+  border-bottom: 1px dashed black;
+  display: flex;
+  flex-direction: row;
 }
 
 .slot {
-    width: 20%;
-    height: 70%;
-    border: 1px solid black;
-    margin-left: 50px;
-    margin-top: 50px;
+  width: 20%;
+  height: 70%;
+  border: 1px solid black;
+  margin-left: 50px;
+  margin-top: 50px;
 }
 
 .tool-container {
-    padding-top: 100px;
-    padding-left: 100px;
-    display: flex;
-    flex-direction: column;
+  padding-top: 100px;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
 .score {
-    padding-bottom: 30px;
-    font-size: 2em;
+  padding-bottom: 30px;
+  font-size: 2em;
 }
 
 #score-number {
-    font-size: 2em;
-    color: #ba3551;
+  font-size: 2em;
+  color: #ba3551;
 }
 
-#spinBtn {   
-    background: #ba3551; 
-    width: 200px;
-    height: 100px;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    color: azure;
-    font-size: 1.2em;
-    font-style: oblique;
-    font-weight: bold;
+#spinBtn {
+  background: #ba3551;
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  color: azure;
+  font-size: 1.2em;
+  font-style: oblique;
+  font-weight: bold;
 }
 
 #spinBtn:hover {
-    box-shadow: 0 0 5px rgba(92, 2, 2, 0.5);
+  box-shadow: 0 0 5px rgba(92, 2, 2, 0.5);
 }
 
 .lower {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    flex-direction: row;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
 }
 
 .win-points {
-    width: 25%;
-    height: 100vh;
-
+  width: 25%;
+  height: 100vh;
 }
 
 .random-points {
-    width: 25%;
-    height: 100vh;
+  width: 25%;
+  height: 100vh;
 }
 
 .winner-icon {
-    padding-top: 5px;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: row;
+  padding-top: 5px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
 }
 
 .random-icons {
-    padding-top: 15px;
-    margin-left: 50px;
-    display: flex;
-    flex-direction: row;
-    height: 50px;
+  padding-top: 15px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
 }
 
 img {
-    height: 50px;
+  height: 50px;
 }
 
 span {
-    font-size: 1.2em;
-    padding-top: 10px;
-    padding-left: 20px;
+  font-size: 1.2em;
+  padding-top: 10px;
+  padding-left: 20px;
 }
 
 h1 {
-    padding-top: 20px;
-    padding-left: 25px;
+  padding-top: 20px;
+  padding-left: 25px;
 }
 
 .diamond {
-    background: url(./img/diamond.png) center no-repeat;
+  background: url(./img/diamond.png) center no-repeat;
 }
 
- .seven {
-     background: url(./img/seven.png) center no-repeat;
- }
+.seven {
+  background: url(./img/seven.png) center no-repeat;
+}
 
 .horseshoe {
-    background: url(./img/horseshoe.png) center no-repeat;
+  background: url(./img/horseshoe.png) center no-repeat;
 }
 
 .bell {
-    background: url(./img/bell.png) center no-repeat;
+  background: url(./img/bell.png) center no-repeat;
 }
 
 .lemon {
-    background: url(./img/lemon.png) center no-repeat;
+  background: url(./img/lemon.png) center no-repeat;
 }
 
 .cherry {
-    background: url(./img/cherry.png) center no-repeat;
+  background: url(./img/cherry.png) center no-repeat;
 }
 
 #spinBtn.disabled {
-    pointer-events: none;
-    cursor: default;
-    opacity: 0.5;
-    background-color: grey;
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.5;
+  background-color: grey;
 }
